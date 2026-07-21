@@ -3,3 +3,62 @@
     bottom: 15px;
     right: 10px;
 }
+.listItem{
+    background-color: #74a7b2;
+    width: 120px;
+    height: 40px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: 74a7b2
+}
+#taskList{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.denyButton{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border: none;
+    color: azure;
+    border-radius: 50% ;
+}
+.denyButton:hover{
+    cursor: pointer;
+}
+body{
+    background-color: #0086df;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+#taskInput{
+width: 150px;
+height: 40px;
+background-color: aquamarine;
+border: none;
+border-radius: 20px;
+box-shadow: 0 0 15px 5px #8faff2;
+outline: none;
+}
+#taskButton{
+    width: 120px;
+    height: 25px;
+    border: none;
+    background-color: #6feeb7;
+    cursor: pointer;
+    border-radius: 15px ;
+}
+#title{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 0 5px 10px white;
+    border-radius: 25px;
+}
