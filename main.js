@@ -23,23 +23,26 @@ function addTask() {
 
   taskList.append(toDo);
 
-  
+  toDo.append(taskInput.value)
   cancelButton.classList.add("denyButton","dark");
   toDo.classList.add("listItem");
-  toDo.innerHTML = `
-     <p class="red"> Work-task <span>${inputText}</span></p>
-  
-  `;
   tasks++;
   updateTaskNumber();
   taskInput.value = "";
   toDo.append(cancelButton);
   cancelButton.addEventListener("click", removeTask);
+  let checkbox = document.createElement('input')
+  checkbox.setAttribute('type', "checkbox")
+  toDo.prepend(checkbox)
+checkbox.addEventListener("changed", () => {
+    if (checkbox.checked){
+      checkbox.classList.add("checked")} else{
+        checkbox.classList.remove('checked')
+    }
+  })
 }
-
 function removeTask(event) {
   event.target.parentElement.remove();
   tasks--;
   updateTaskNumber();
-  console.log(event.target);
-}
+  console.log(event.target);}
